@@ -54,7 +54,7 @@ Available Methods
    gandalf = GandalfClient("localhost", 8001, requests.request)
 
    repo_name = "gettest_%s" % uuid4()
-   gandalf.repository_new(repo_name, ['rfloriano'], True)
+   gandalf.repository_new(repo_name, ['rfloriano', 'alice'], True)
 
 :mod:`client` Module
 ====================
@@ -233,7 +233,7 @@ Example:
 
 .. testcode:: user_delete
 
-   gandalf.user_delete('rfloriano')
+   gandalf.user_delete('alice')
 
 
 hook_add
